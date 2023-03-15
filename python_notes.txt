@@ -1,0 +1,69 @@
+###########################
+variables
+###########################
+
+dynamically typed language : dont have to declare the type at all
+n = 0
+n = 'abc'
+types are determined at run time
+multiple assignments are allowed
+n, m = 0, 'abc'
+
+n += 1
+n = n + 1
+but n++ not allowed
+
+null is called None in python
+
+###########################
+if statements
+###########################
+if
+elif
+else
+parentheses not required for single line conditionals but multi line conditionals do require it
+
+###########################
+math
+###########################
+decimal division by default whereas most languages have integer division
+5/2 -> 2.5
+// rounds down
+5//2 -> 2
+work around for rounding numbers towards 0 use decimal division and convert to int
+int(-3/2)
+modulo has same issue with -ve numbers
+-10%3 -> should be 1 but is 2
+import math
+math.fmod(-10, 3)
+floor to round down math.floor(3/2)
+ceil to round up math.ceil(3/2)
+
+# if we need max integer
+float('inf')
+# if we need min integer
+float('-inf')
+
+###########################
+arrays
+###########################
+python lists are dynmaic so can be used as stack
+insert is O(n)
+but appending, popping, accessing index is constant time
+arr = [1] * 5
+#unpacking
+a, b, c = [1, 2, 3]
+
+for i, n in enumerate(nums):
+    print(i, n)
+
+#loop through multiple arrays simulatneously
+nums1 = [1, 3, 5]
+nums2 = [2, 4, 6]
+
+for n1, n2 in zip(nums1, nums2):
+    print(n1, n2)
+
+nums.reverse()
+nums.sort()
+nums.sort(reverse = True)
